@@ -35,7 +35,7 @@
 
         combo_esc {
             timeout-ms = <50>;
-            key-positions = <23 11>;
+            key-positions = <23 10>;
             bindings = <&kp LC(A)>;
         };
     };
