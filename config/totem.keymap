@@ -39,9 +39,24 @@
             bindings = <&kp LC(A)>;
         };
 
-        stickyctrl {
-            bindings = <&sk LCTRL>;
-            key-positions = <23 13>;
+        tolayer0 {
+            bindings = <&to 0>;
+            key-positions = <37 5>;
+        };
+
+        toLayer1 {
+            bindings = <&to 1>;
+            key-positions = <37 6>;
+        };
+
+        tolayer2 {
+            bindings = <&to 2>;
+            key-positions = <37 7>;
+        };
+
+        tolayer3 {
+            bindings = <&to 3>;
+            key-positions = <37 8>;
         };
     };
 
@@ -84,10 +99,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                  &kp Q  &kp W  &kp E        &kp R      &kp T        &kp Y           &kp U      &kp I      &kp O    &kp P
-                  &kp A  &kp S  &kp D        &kp F      &kp G        &kp H           &kp J      &kp K      &kp L    &kp SEMICOLON
-&mt CARET ESCAPE  &kp Z  &kp X  &mt LCTRL C  &kp V      &kp B        &kp N           &kp M      &kp COMMA  &kp DOT  &kp FSLH       &kp SQT
-                                &kp ENTER    &lt 1 TAB  &kp SPACE    &sk LEFT_SHIFT  &lt 3 TAB  &kp BSPC
+                  &kp Q  &kp W  &kp E         &kp R           &kp T        &kp Y        &kp U            &kp I            &kp O    &kp P
+                  &kp A  &kp S  &kp D         &kp F           &kp G        &kp H        &kp J            &kp K            &kp L    &kp SEMICOLON
+&mt CARET ESCAPE  &kp Z  &kp X  &kp C         &kp V           &kp B        &kp N        &kp M            &kp COMMA        &kp DOT  &kp FSLH       &kp SQT
+                                &sk LEFT_ALT  &sk LEFT_SHIFT  &sk LCTRL    &lt 1 SPACE  &lt 2 BACKSPACE  &lt 3 RIGHT_ALT
             >;
         };
 
@@ -110,10 +125,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp ESC    &sk LCTRL  &kp UP    &kp EQUAL  &kp LBRC    &kp RBRC  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_PLUS
-        &kp LSHFT  &kp LEFT   &kp DOWN  &kp RIGHT  &kp LBKT    &kp RBKT  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_MINUS
-&trans  &kp DEL    &kp PG_UP  &kp CAPS  &kp PG_DN  &kp LPAR    &kp RPAR  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_MULTIPLY  &trans
-                              &trans    &trans     &trans      &none     &kp KP_N0  &trans
+        &kp ESC    &sk LCTRL  &kp UP    &kp EQUAL  &kp LBRC    &kp RBRC  &kp KP_N7  &kp KP_N8        &kp KP_N9  &kp KP_PLUS
+        &kp LSHFT  &kp LEFT   &kp DOWN  &kp RIGHT  &kp LBKT    &kp RBKT  &kp KP_N4  &kp KP_N5        &kp KP_N6  &kp KP_MINUS
+&trans  &kp DEL    &kp PG_UP  &kp CAPS  &kp PG_DN  &kp LPAR    &kp RPAR  &kp KP_N1  &kp KP_N2        &kp KP_N3  &kp KP_MULTIPLY  &trans
+                              &trans    &trans     &trans      &none     &trans     &kp KP_NUMBER_0
             >;
         };
 
