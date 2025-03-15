@@ -38,6 +38,11 @@
             key-positions = <23 10>;
             bindings = <&kp LC(A)>;
         };
+
+        stickyctrl {
+            bindings = <&sk LCTRL>;
+            key-positions = <23 13>;
+        };
     };
 
     macros {
