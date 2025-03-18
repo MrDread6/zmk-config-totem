@@ -50,7 +50,7 @@
         };
 
         tolayer2 {
-            bindings = <&to 0>;
+            bindings = <&to 2>;
             key-positions = <37 7>;
         };
 
